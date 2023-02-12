@@ -21,7 +21,8 @@ class Practice19 {
 		int receiveNumber = Integer.parseInt(args[0]) ;  //ループ毎にcalcNumberに掛ける数（コマンドライン引数で受け取った値）
 		int calcNumber    = receiveNumber ;              //表示する数（初期値：コマンドライン引数で受け取った値）
 
-        if(receiveNumber <= 1) {
+        // if(receiveNumber <= 1) {
+        if(receiveNumber < 0 || receiveNumber == 0 || receiveNumber == 1) {
             System.out.println("適切な値を入力してください");
         } else {
             while( calcNumber < 100 ){

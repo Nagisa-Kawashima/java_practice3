@@ -14,10 +14,10 @@
 ----------------------------------------------------*/
 
 public class Practice18 {
-    public static void main (String[] args) {
-		
-		int score = Integer.parseInt(args[0]);
-		if (!(score >= 0 && score <= 100)) {
+    public static void main(String[] args) {
+
+        int score = Integer.parseInt(args[0]);
+        if (!(score >= 0 && score <= 100)) {
             System.out.println("不正な点数です！");
         } else if (score >= 0 && score <= 59) {
             System.out.println("赤点です！");
@@ -25,10 +25,12 @@ public class Practice18 {
             System.out.println("普通です！");
         } else {
             System.out.println("優秀です！");
+
+            if (score == 100) {
+                System.out.println("満点だったので宿題免除です！");
+            }
+
         }
- 		
-		
-		
-		
-	}
+
+    }
 }
