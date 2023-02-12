@@ -56,5 +56,15 @@ public class Practice15 {
             System.out.println(display2);
          }
 
+
+        String display3 = "";
+        for(int i = 1; i <= 9; i++) {
+            display3 = "";
+            for(int j = 1; j <= 9; j++) {
+                display3 = display3 + i * j + " ";
+            }
+            System.out.println(display3);
+        }
+
     }
 }
