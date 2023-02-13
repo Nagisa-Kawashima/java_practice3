@@ -11,9 +11,9 @@ public class Practice21 {
         //     System.out.println("777は硬貨として適切な値ではありません");
         // }
 
-            int coinNum = args.length;
-            int coinChk = 0;
-            int coinSum = 0;
+            int coinNum = args.length; //投入された硬貨の枚数
+            int coinChk = 0;    //チェック対象の硬貨の金額
+            int coinSum = 0;   //投入された硬貨の合計金額
 
             for(int i = 0; i < coinNum; i++) {
                 coinChk = Integer.parseInt(args[i]);
